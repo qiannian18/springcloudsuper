@@ -4,3 +4,4 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    #让自己不去注册中心
