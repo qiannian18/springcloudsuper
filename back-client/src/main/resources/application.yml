@@ -2,5 +2,9 @@ server:
   port: 8088
 spring:
   application:
-    name: back-server
-#×¢²áÖĞĞÄµØÖ·
+    name: back-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka/
+#é…ç½®æ³¨å†Œä¸­å¿ƒåœ°å€
