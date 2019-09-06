@@ -2,7 +2,7 @@ server:
   port: 8088
 spring:
   application:
-    name: back-service
+    name: back-client
 eureka:
   client:
     service-url:

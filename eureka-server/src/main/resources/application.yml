@@ -4,4 +4,4 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    #ÈÃ×Ô¼º²»È¥×¢²áÖĞĞÄ
+    #è¡¨ç¤ºè‡ªå·±ä¸æ³¨å†ŒæœåŠ¡
