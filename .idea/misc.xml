@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/back-client/pom.xml" />
         <option value="$PROJECT_DIR$/black-service/pom.xml" />
         <option value="$PROJECT_DIR$/back-server/pom.xml" />
+        <option value="$PROJECT_DIR$/tb-server/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
       </list>
     </option>
   </component>

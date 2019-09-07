@@ -27,4 +27,9 @@ public class ResultBean<T> {
                 ", data=" + data +
                 '}';
     }
+
+    public ResultBean(String code, T data) {
+        this.code = code;
+        this.data = data;
+    }
 }

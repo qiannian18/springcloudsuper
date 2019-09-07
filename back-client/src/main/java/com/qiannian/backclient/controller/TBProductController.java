@@ -1,19 +1,23 @@
 package com.qiannian.backclient.controller;
 
+import com.qiannian.backclient.feign.IProductAll;
+import com.qiannian.entity.Product;
 import com.qiannian.pojo.ResultBean;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("TB")
 public class TBProductController {
 
-    @GetMapping("productAll")
-    public ResultBean getTBProductAll(){
+    @Autowired
+    private IProductAll productAll;
 
+    @GetMapping("/getById/{id}")
+    public ResultBean  getTBProductAll(@PathVariable("id") Integer id) {
+        Product product = productAll.getProduct(id);
 
-        return  new ResultBean();
+        return new ResultBean("200",product);
     }
 }
